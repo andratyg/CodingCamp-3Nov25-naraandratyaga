@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #ccc;
+    position: sticky;
+    top: 0;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 1rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+.section-container {
+    padding: 2rem;
+    border-bottom: 1px solid #eee;
+    min-height: 200px;
+}
+
+#home {
+    background-color: #f9f9f9;
+}
+
+.photo-banner img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+    margin: 1rem 0;
+}
+
+.hq-container {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.hq-item .circle {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #555;
+    border-radius: 50%;
+    margin: 0 auto 0.5rem;
+}
+
+.message-us-container {
+    display: flex;
+    gap: 2rem;
+}
+
+.form-wrapper,
+.output-wrapper {
+    flex: 1;
+    padding: 1rem;
+}
+
+.form-wrapper {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.output-wrapper {
+    background-color: #f4f4f4;
+    border-radius: 5px;
+}
+
+#contact-form div {
+    margin-bottom: 1rem;
+}
+
+#contact-form label {
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="date"],
+#contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#contact-form input[type="radio"] {
+    margin-right: 5px;
+}
+
+#contact-form button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    background-color: #555;
+}
+
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+    margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        display: none;}
+
+    .hq-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .message-us-container {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="nav-logo">MyWebsite</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#profile">Our Profile</a></li>
+                <li><a href="#headquarter">Our Headquarter</a></li>
+                <li><a href="#message-us">Message Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="section-container">
+            <h1 id="welcome-text">Welcome To Website</h1>
+            <p>Ini adalah website latihan pertama.</p>
+        </section>
+
+        <section id="profile" class="section-container">
+            <h2>Our Profile</h2>
+            
+            <div class="photo-banner">
+                <img src="https://via.placeholder.com/1200x300" alt="Photo Banner">
+            </div>
+            
+            <h3>About The Company</h3>
+            <p>perusahaankami berfokus pada pemrograman </p>
+            
+            <h3>Vision and Mission</h3>
+            <p><strong>Visi:</strong> Menjadi perusahaan terdepan...</p>
+            <p><strong>Misi:</strong> Menyediakan layanan terbaik...</p>
+        </section>
+
+        <section id="headquarter" class="section-container">
+            <h2>Our Headquarter</h2>
+            <div class="hq-container">
+                <div class="hq-item">
+                    <div class="circle"></div>
+                    <p>Jakarta</p>
+                </div>
+                <div class="hq-item">
+                    <div class="circle"></div>
+                    <p>Bandung</p>
+                </div>
+                <div class="hq-item">
+                    <div class="circle"></div>
+                    <p>Surabaya</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="message-us" class="section-container">
+            <h2>Message Us</h2>
+            <div class="message-us-container">
+                <div class="form-wrapper">
+                    <form id="contact-form">
+                        <div>
+                            <label for="nama">Nama</label>
+                            <input type="text" id="nama" name="nama">
+                        </div>
+                        <div>
+                            <label for="tanggal-lahir">Tanggal Lahir</label>
+                            <input type="date" id="tanggal-lahir" name="tanggal-lahir">
+                        </div>
+                        <div>
+                            <label>Jenis Kelamin</label>
+                            <input type="radio" id="laki-laki" name="gender" value="Laki-laki">
+                            <label for="laki-laki">Laki-laki</label>
+                            <input type="radio" id="perempuan" name="gender" value="Perempuan">
+                            <label for="perempuan">Perempuan</label>
+                        </div>
+                        <div>
+                            <label for="pesan">Pesan</label>
+                            <textarea id="pesan" name="pesan" rows="4"></textarea>
+                        </div>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+                <div class="output-wrapper">
+                    <div id="form-output">
+                        <p>Current Time: -</p>
+                        <p>Nama: -</p>
+                        <p>Tanggal Lahir: -</p>
+                        <p>Jenis Kelamin: -</p>
+                        <p>Pesan: -</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created by Me</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
